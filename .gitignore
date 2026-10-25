@@ -1,0 +1,20 @@
+# 大文件与大目录（本仓库不收录第三方二进制）
+iso/
+tools/
+*.iso
+!vmx/answer.iso
+*.log
+*.vmem
+*.vmsn
+*.vmsd
+*.nvram
+*.lck/
+win7.vmdk.bak
+*.failed-install.vmdk
+
+# 系统/编辑器
+.DS_Store
+Thumbs.db
+desktop.ini
+.vscode/
+.idea/
