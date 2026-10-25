@@ -279,8 +279,7 @@ print(data[i-2000:i+2000].decode("utf-16-le", "ignore"))
 
 配套文件（.vmx 模板、`autounatt.xml`、打包好的应答盘、重建脚本）已整理成仓库：
 
-> **https://github.com/你的GitHub用户名/win7-asm-lab-kit**
-> （发布时把这里换成你的实际仓库地址）
+> **https://github.com/DAI10004/win7-asm-lab-kit**
 
 Win7 镜像与 TPC 安装包属第三方资源，不在仓库内，请按学校渠道获取（仓库 README 写了镜像的 SHA1 校验值与获取途径）。
 
