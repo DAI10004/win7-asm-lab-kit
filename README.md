@@ -37,6 +37,20 @@ docs/踩坑速查.md        按现象查原因
 | VMware Tools ISO | 同上 | Broadcom 归档，或本仓库 `docs` 里写的替代方案 |
 | TPC 集成开发环境 | 厂商软件，请走学校渠道 | 任课老师/实验中心光盘 |
 
+## 素材获取（我实际用的下载源，均已亲自下载校验）
+
+| 素材 | 地址 | 校验值 / 备注 |
+|---|---|---|
+| **Win7 旗舰版 x86 SP1 原版 ISO** | <https://msdn.itellyou.cn/> → 搜 `Windows 7` → 选「Windows 7 简体中文旗舰版 with SP1 x86 (MSDN, 6.1.7601.17514, 2011-11)」 | `cn_windows_7_ultimate_with_sp1_x86_dvd_u_677486.iso`，2,653,276,160 字节，SHA1 `B92119F5B732ECE1C0850EDA30134536E18CCCE7` |
+| **VMware Tools 11.0.6（Win7 免补丁，推荐）** | <https://packages-prod.broadcom.com/tools/frozen/windows/WindowsToolsVista/SP2/windows.iso> | 143,421,440 字节，实测可直下 |
+| VMware Tools 11.0.6 备份 | <https://github.com/YorkWaugh/vmware_tools_backup/releases/download/Archives/winVista.iso> | 同一文件 |
+| VMware Tools 12.4.9（32 位最后一版） | 同仓库 `windows-x86.iso` | 54,243,328 字节；需先打 KB4490628 + KB4474419 |
+| **TPC 集成开发环境** | <https://gitcode.com/open-source-toolkit/33c3d>，文件 `1. 集成开发环境.rar` | ⚠️ 是 **TPC-ZK-II** 版，与 TPC-USB 同厂同架构但不完全等同；纯软件实验可用，硬件联机需机型支持；序列号 `111111` |
+
+> **版权说明**：以上为镜像/索引站点与第三方项目页，本仓库**不托管任何安装文件**。请核对 SHA1 后于合规范围内使用；校园环境建议优先走学校渠道（MSDN 订阅 / 机房统一镜像 / 实验箱配套光盘）。
+>
+> 实测提醒：`GitCode` 对匿名直链有限流（API `429`、`raw.gitcode.com` `403`），请用浏览器登录后下载。
+
 ## 已验证环境
 
 | 项 | 值 |

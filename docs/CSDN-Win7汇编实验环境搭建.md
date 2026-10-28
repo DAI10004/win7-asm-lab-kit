@@ -25,6 +25,20 @@
 
 > 微软 2024 年已撤下 Win7 官方下载，镜像只能走 itellyou 的 ed2k/网盘；下完务必核对上面的 SHA1。
 
+### 2.1 素材获取（我实际用的下载源）
+
+| 素材 | 地址 | 校验/备注 |
+|---|---|---|
+| **Win7 旗舰版 x86 SP1 原版镜像** | <https://msdn.itellyou.cn/> → 搜 `Windows 7` → 取「Windows 7 简体中文旗舰版 with SP1 x86 (MSDN, 6.1.7601.17514, 2011-11)」 | 文件名 `cn_windows_7_ultimate_with_sp1_x86_dvd_u_677486.iso`，2,653,276,160 字节，SHA1 `B92119F5B732ECE1C0850EDA30134536E18CCCE7` |
+| **VMware Tools 11.0.6（Win7 免补丁，推荐）** | Broadcom 归档直下：<https://packages-prod.broadcom.com/tools/frozen/windows/WindowsToolsVista/SP2/windows.iso> | 143,421,440 字节；实测 200 可下 |
+| VMware Tools 11.0.6 备份 | <https://github.com/YorkWaugh/vmware_tools_backup/releases/download/Archives/winVista.iso> | 同上文件，GitHub Release 镜像 |
+| VMware Tools 12.4.9（32 位最后一版） | 同仓库 `windows-x86.iso`（12.4.9-24964244） | 54,243,328 字节；需先打 KB4490628 + KB4474419 |
+| **TPC 集成开发环境** | GitCode 项目：<https://gitcode.com/open-source-toolkit/33c3d>，文件 `1. 集成开发环境.rar` | ⚠️ 这个包是 **TPC-ZK-II** 版，与课程用的 TPC-USB 同厂同架构但不完全等同：纯软件实验（实验一/二）可用，硬件联机（实验三/四）要看 IDE 是否支持 TPC-USB 机型；序列号 `111111` |
+
+> **版权说明**：以上均为镜像站/索引站与第三方项目页，本文**不托管任何安装文件**。下载后请核对上面的 SHA1；微软镜像与厂商软件的使用请遵守各自许可，校园环境建议优先走学校渠道（MSDN 订阅、机房统一镜像、实验箱配套光盘）。
+>
+> 补充一句实测结论：`itellyou` 的 Win7 条目和 `GitCode` 上的 TPC 包我都亲自下载并校验过，能下、能装；但 `GitCode` 对匿名直链有限流（API 返回 429、`raw.gitcode.com` 返回 403），建议用浏览器登录后下载。
+
 ## 三、第一步：手写 .vmx，把 12 代 CPU 的坑一次性绕开
 
 用 VMware 向导新建虚拟机后，先**关机**，用记事本编辑 `.vmx`。下面这些行是关键（缺一行就可能蓝屏/黑屏/开不了机）：
